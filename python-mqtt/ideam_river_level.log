@@ -1,0 +1,3 @@
+2025-03-21 14:05:02,462 - INFO - Iniciando consulta de datos IDEAM
+2025-03-21 14:05:23,661 - INFO - Datos obtenidos - Municipio: PUERTO SALGAR, MaxNivel: 5.21mts, Estado: Amarilla, Nivel Sensor: 4.1mts, Fecha: 2025/03/21 11:00
+2025-03-21 14:05:23,662 - INFO - Mensaje publicado correctamente en MQTT
