@@ -31,10 +31,9 @@ def get_data_sensor():
         if response.status_code == 200:
             data = response.json()
             sensor_data = data.get('Hsen', {}).get('data', [])
-            last_five_values = [item for item in sensor_data[-5:] if item.get('Hsen', '') is not None]
-            if last_five_values:
-                last_value = last_five_values[-2]
-                return last_value
+            for last_value in reversed(sensor_data):
+                if last_value.get('Hsen') is not None:
+                    return last_value
             else:
                 logging.error("No se encontraron datos válidos en el sensor")
                 return None

@@ -94,7 +94,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
-
+**/.env/** */
 # Spyder project settings
 .spyderproject
 .spyproject
@@ -118,3 +118,8 @@ dmypy.json
 
 # Esp32
 /esp32/ideam_river_level/credentials.h
+
+# Logs
+/python-mqtt/ideam_river_level.log
+
+.DS_Store
